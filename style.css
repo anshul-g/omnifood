@@ -1,0 +1,662 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik",sans-serif;
+  color: rgb(45, 45, 45);
+  line-height: 1;
+}
+
+/* -- HEADER -- */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fae5d3;
+  padding: 3.2rem 6.4rem;
+}
+
+.logo{
+  height: 3.2rem;
+}
+
+.nav-list{
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 600;
+  align-items: center;
+}
+
+ .button{
+  background: #e67e22;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.8rem;
+  color: white;
+}
+
+/* -- HERO SECTION --*/
+
+.hero-section {
+  background: #fae5d3;
+  padding: 3.2rem;
+  padding-bottom: 9.6rem;
+}
+
+.hero {
+  display: flex;
+  gap: 10rem;
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.hero-right {
+  flex: 1;
+  width: 50%;
+}
+
+.hero-left {
+  flex: 1;
+  width: 50%;
+  align-self: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.summary {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 3rem;;
+}
+
+.btn-primary:link,
+.btn-primary:visited{
+  display: inline-block;
+  background: #e67e22;
+  color:white;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 550;
+  border-radius: 0.8rem;
+  margin-right: 1rem;
+  transition: all 0.6s;
+  margin-bottom: 2rem;
+}
+
+.btn-primary:active,
+.btn-primary:hover{
+  background: #cf711f;
+}
+
+.btn-secondary:link,
+.btn-secondary:visited{
+  display: inline-block;
+  box-shadow: inset 0 0 0 2px;
+  color: #e67e22;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 550;
+  border-radius: 0.8rem;
+  transition: all 0.5s;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active{
+  background: rgb(245, 241, 241);
+  box-shadow: none;
+}
+
+.customers{
+  display: flex;
+  padding-top: 4rem;
+  gap: 2.8rem;
+}
+
+.customer-faces{
+  flex-shrink: 0;
+}
+
+.customer-img{
+  margin-right: -1.3rem;
+  border-radius: 50%;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: solid 0.3rem #fae5d3;
+}
+
+.customer-text{
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ---FEATURED IN SECTION--*/
+.featured-section{
+  padding: 0 2.4rem 0 2.4rem;
+}
+
+.featured-section span{
+  display:block;
+  text-align: center;
+  margin-top: 6.4rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.featured-logos{
+  max-width: 120rem;
+  display:flex;
+  gap: 4rem; 
+  justify-content: center;
+  margin:0 auto;
+  padding: 4rem;
+}
+
+.featured-logos img{
+  height: 4.8rem;
+  filter:brightness(0);
+  opacity: 70%;
+}
+
+/* ---HOW IT WORKS SECTION ---*/
+.how-section{
+  padding: 0 3.2rem 9.6rem 3.2rem;
+}
+
+.sub-header{
+  margin: 9.6rem auto ;
+  max-width: 120rem;
+}
+
+.section-heading{
+  display: block;
+  text-transform: uppercase;
+  color: #e67e22;
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 750;
+}
+
+.heading-primary{
+  letter-spacing: -0.1rem;
+  font-weight: 750;
+}
+
+.grid-container{
+  display: grid;
+  max-width: 120rem;
+  margin: 0 auto;
+  gap: 8.4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.step-text{
+  align-self: center;
+}
+
+.step-number{
+  font-size: 8.6rem;
+  color: rgb(209, 203, 203);
+  font-weight: 800;
+}
+
+.heading-tertiary{
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
+  font-weight: 800;
+}
+
+.step-description{
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+}
+
+.step-img-container{
+  justify-self: center;
+  align-self: center;
+}
+
+.step-img{
+  width: 15vw;
+}
+
+/* ---MEALS SECTION--- */
+.meals-section{
+  padding: 0 3.2rem 9.6rem 3.2rem;
+}
+
+.meals-grid-container{
+  display: grid;
+  max-width: 120rem;
+  margin: 0 auto;
+  gap: 4.8rem;
+  grid-template-columns: repeat(3, 1fr);
+} 
+
+.meals{
+  box-shadow: 0 2.4rem 4.8rem rgb(0,0,0,0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.7s;
+}
+
+.meals:hover{
+  transform: translateY(-0.6rem);
+}
+
+.meal-img{
+  width: 100%;
+}
+
+.meal-name{
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+  font-weight: 550;
+}
+
+.meal-content{
+  padding: 4.8rem;
+}
+
+.meal-attributes{
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.meal-attribute{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tag{
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.tag--vegetarian{
+  background: #51cf66;
+}
+
+.tag--vegan{
+  background: #51cf66;
+}
+
+.tag--paleo{
+  background: #51cf66;
+}
+
+ion-icon{
+  color: #e67e22;
+  font-size: 2.8rem;
+}
+
+.diet{
+  justify-self: center;
+  box-shadow: 0 2.4rem 4.8rem rgb(0,0,0,0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  padding: 4.8rem 6.4rem;
+}
+
+.diet-list-head{
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.diet-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+  font-size: 2rem;
+}
+
+.diet-type{
+  display:flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ---TESTIMONIALS SECTION---*/
+.testimonial-section{
+  display: grid;
+  gap: 4.8rem;
+  margin: 0 auto;
+  background:#fae5d3;
+  grid-template-columns: 52fr 48fr;
+  justify-content: center;
+}
+
+.testimonial-grid-container{
+  margin: auto 0;
+  padding: 9.6rem 3.2rem 9.6rem 9.6rem  ;
+}
+
+.testimonial-part{
+  display: grid;
+  row-gap: 4.8rem;
+  column-gap: 6.4rem;
+  padding-top: 4.8rem;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 4.8rem;
+}
+
+.testimonial{
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.testimonial-img{
+  border-radius: 50%;
+  width: 20%;
+  flex-shrink: 0; 
+}
+
+.testimonial span{
+  font-size: 1.6rem;
+  font-weight: 550;
+  color: #777;
+}
+
+.gallery-part{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 4rem 2rem;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.gallery-img{
+  width: 100%;
+  transition: all 0.6s;
+}
+
+.gallery-img:hover{
+  transform: scale(1.05);
+}
+
+/* ---PRICING SECTION--- */
+.pricing-section{
+  padding: 0 3.2rem 9.6rem 3.2rem;
+}
+
+.pricing-container{
+  margin: 0 auto;
+  display: grid;
+  width: 55%;
+  gap: 4.8rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.plan{
+  padding: 4.8rem;
+  box-shadow: 0 2.4rem 4.8rem rgb(0,0,0,0.1);
+  border-radius: 2rem;
+}
+
+.plan-features{
+  margin-top: 5.4rem;
+}
+
+.plan-features li{
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.plan-features span{
+  font-size: 2rem;
+}
+
+.plan-features ion-icon{
+  flex-shrink: 0;
+}
+
+.plan-name{
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color:#e67e22;
+}
+
+.plan-price{
+  text-align: center;
+  font-size: 8.4rem;
+  font-weight: 600;
+}
+
+.plan-time{
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.plan-signin{
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.complete{
+  background:#fae5d3
+}
+
+.empty{
+  opacity: 0%;
+}
+
+/* ---FEATURES SECTION--- */
+.features-section{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 120rem;
+  margin: 0 auto;
+  gap: 3.2rem;
+}
+
+.feature{
+  padding: 2.8rem;
+  background: #fae5d3;
+  border-radius: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title{
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text{
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.feature ion-icon{
+  font-size: 4.8rem;
+  background: white;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+/* ---CTA SECTION--- */
+.cta-section{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 120rem;
+  border-radius: 1.2rem;
+  margin: 9.6rem auto;
+  background-image: linear-gradient(90deg, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.cta-image{
+  background-image: url("../omnifood/img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-text{
+  margin: 6.4rem 4.8rem;
+}
+
+.cta-info{
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.cta-form{
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-top: 2.4rem;
+}
+
+.cta-form input, 
+.cta-form select{
+  padding: 1.4rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border: none;
+  grid-column: 1/2
+}
+
+.wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.cta-form label{
+  grid-column: 1;
+  font-family: inherit;
+  font-size: 2rem;
+}
+
+.submit{
+  grid-column: 2/-1;
+  padding: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  background: #fdf2e9;
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* ---FOOTER SECTION--- */
+.footer-container{
+  display: grid;
+  gap: 4.8rem;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer {
+  padding: 12.8rem 0;
+  margin: 0 9.6rem;
+  border-top: 1px solid #eee;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: 3.2rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
