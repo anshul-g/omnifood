@@ -38,6 +38,12 @@ body {
   align-items: center;
 }
 
+.nav-list a{
+  text-decoration: none;
+  color:rgb(45, 45, 45);
+  font-weight: 500;
+}
+
  .button{
   background: #e67e22;
   padding: 1.2rem 1.6rem;
